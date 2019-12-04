@@ -5,19 +5,27 @@ $(document).ready(function() {
 var instrument = $("input:radio[name=instrumentname]:checked").val();
 var coffee = $("input:radio[name=coffeename]:checked").val();
 var demeanor = $("input:radio[name=demeanorname]:checked").val();
+var trip = $("input:radio[name=tripname]:checked").val();
 var instrument = parseInt(instrument)
 var coffee = parseInt(coffee)
 var demeanor = parseInt(demeanor)
+var trip = parseInt(trip)
 
 
 // my reference
-// $(".wrestler").text(wrestler)
+// $(".instrument").text(istrument)
 // $(".coffee").text(coffee)
 if (instrument === 1 && coffee === 1 && demeanor === 1) {
   $('#answer1').show();
-}else  {
+}else {
   $('#answer2').show();
   }
+  if (trip === 3) {
+    $('#answer3').show();
+    $('#answer1').hide();
+    $('#answer2').hide();
+  }
+
 
 
 
