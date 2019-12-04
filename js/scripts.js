@@ -13,9 +13,9 @@ var demeanor = parseInt(demeanor)
 // my reference
 // $(".wrestler").text(wrestler)
 // $(".coffee").text(coffee)
-if (instrument === 1 && coffee === 1) {
+if (instrument === 1 && coffee === 1 && demeanor === 1) {
   $('#answer1').show();
-}else {
+}else  {
   $('#answer2').show();
   }
 
